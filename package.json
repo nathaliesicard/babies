@@ -15,5 +15,8 @@
   "description": "",
   "dependencies": {
     "koa": "^1.2.4"
+  },
+  "engines": {
+    "node": "7.0.0"
   }
 }
