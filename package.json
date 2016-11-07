@@ -17,7 +17,9 @@
   },
   "description": "",
   "dependencies": {
+    "better-assert": "^1.0.2",
     "bootstrap-sass": "^3.3.7",
+    "co-pg": "^2.0.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
     "koa": "^1.2.4",
@@ -25,7 +27,8 @@
     "koa-nunjucks-render": "^1.1.1",
     "koa-router": "^5.4.0",
     "koa-views": "^5.1.2",
-    "node-sass": "^3.11.2"
+    "node-sass": "^3.11.2",
+    "pg": "^6.1.0"
   },
   "engines": {
     "node": "7.0.0"

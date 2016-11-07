@@ -5836,3 +5836,7 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+/* Navbar */
+.navbar-brand {
+  font-family: 'Circular-Bold', Helvetica, Arial, sans-serif; }

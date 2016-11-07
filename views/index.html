@@ -1,6 +1,13 @@
 {% extends 'master.html' %}
 {% block embed %}
 
-Hello world!
+Categories are:
+<ul>
+{% for category in categories %}
+  <li>
+{{ category.name }}
+  </li>
+{% endfor %}
+</ul>
 
 {% endblock %}

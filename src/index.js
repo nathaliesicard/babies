@@ -3,7 +3,7 @@ const app = koa();
 const serve = require('koa-better-static');
 const nunjucks = require('koa-nunjucks-render');
 const Router = require ('koa-router');
-
+const db = require('./db/util');
 
 // logger
 
@@ -24,15 +24,18 @@ app.use(nunjucks('views', {
 
 var router = new Router();
 
-var paths = {
-  '/': 'index'
-};
+router.get('/', function*(){
 
-Object.keys(paths).forEach(function(path) {
-  router.get(path, function*() {
-    yield this.render(paths[path]);
-  });
+  let categories = yield db.query(
+    'SELECT * FROM categories'
+  );
+  console.log(categories);
+
+  yield this.render('index',{
+    categories: categories.rows
+  })
 });
+
 
 app.use(router.routes());
 
