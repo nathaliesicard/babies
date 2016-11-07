@@ -1,39 +1,45 @@
 /*Brand Colors*/
-$brand-success: #2ecc71;
-$brand-info: #5bc0de;
-$brand-warning: #f1c40f;
-$brand-danger: #e74c3c;
-
-$brand-primary: #3F3244;
-$brand-primary-light: #a9589b;
-$brand-primary-medium: #60495A;
-$link-color: $brand-primary-light;
-
-/*Components*/
-
 
 
 /* Typography */
+@font-face {
+  font-family: 'Circular-Book';
+  src: url('/fonts/Circular/CircularStd-Book.eot');
+  src: url('/fonts/Circular/CircularStd-Book.woff2') format('woff2'),
+  url('/fonts/Circular/CircularStd-Book.woff') format('woff'),
+  url('/fonts/Circular/CircularStd-Book.ttf') format('truetype'),
+  url('/fonts/Circular/CircularStd-Book.svg#CircularStd-Book') format('svg'),
+  url('/fonts/Circular/CircularStd-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Circular-Bold';
+  src: url('/fonts/Circular/CircularStd-Bold.eot');
+  src: url('/fonts/Circular/CircularStd-Bold.woff2') format('woff2'),
+  url('/fonts/Circular/CircularStd-Bold.woff') format('woff'),
+  url('/fonts/Circular/CircularStd-Bold.ttf') format('truetype'),
+  url('/fonts/Circular/CircularStd-Bold.svg#CircularStd-Bold') format('svg'),
+  url('/fonts/Circular/CircularStd-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/*Navbar*/
+@font-face {
+  font-family: 'Circular-Medium';
+  src: url('/fonts/Circular/CircularStd-Medium.eot');
+  src: url('/fonts/Circular/CircularStd-Medium.woff2') format('woff2'),
+  url('/fonts/Circular/CircularStd-Medium.woff') format('woff'),
+  url('/fonts/Circular/CircularStd-Medium.ttf') format('truetype'),
+  url('/fonts/Circular/CircularStd-Medium.svg#CircularStd-Medium') format('svg'),
+  url('/fonts/Circular/CircularStd-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+$font-family-sans-serif: 'Circular-Book', Helvetica, Arial, sans-serif;
+$headings-font-family: 'Circular-Bold', Helvetica, Arial, sans-serif;
 
-
-/*Fonts*/
-
-/*Forms*/
-
-/*Form states and alerts*/
-
-
-
-/*Alerts*/
-
-
-/*Thumbnails*/
-
-
-/*Buttons*/
 
 @import "../public/bootstrap/stylesheets/bootstrap";
