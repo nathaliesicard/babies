@@ -5,6 +5,8 @@
   "scripts": {
     "start": "node ./src/index.js",
     "start-dev": "NODE_ENV=development nodemon ./src/index.js",
+    "postinstall": "node-sass --precision 8 sass/styles.scss --output public/css",
+    "sass-dev": "node-sass --watch sass --precision 8 --output public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,11 +17,15 @@
   },
   "description": "",
   "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
     "koa": "^1.2.4",
     "koa-better-static": "^1.0.5",
     "koa-nunjucks-render": "^1.1.1",
     "koa-router": "^5.4.0",
-    "koa-views": "^5.1.2"
+    "koa-views": "^5.1.2",
+    "node-sass": "^3.11.2"
   },
   "engines": {
     "node": "7.0.0"
