@@ -2,7 +2,7 @@
 const assert = require('better-assert');
 const pg = require('co-pg')(require('pg'));
 
-const databaseUrl = 'postgres://localhost/babies';
+const databaseUrl = process.env.DATABASE_URL || 'postgres://localhost/babies';
 
 // parse int8 as an integer
 // TODO: Handle numbers past parseInt range
